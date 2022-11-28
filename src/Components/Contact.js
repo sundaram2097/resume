@@ -2,11 +2,13 @@ import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import {Element} from 'react-scroll';
 
 function Contact() {
 
   
   return <>
+  <Element id='contact'>
     <section className='aboutpage bg-dark'>
 <div className='container text-light'>
 <div className='row '>
@@ -58,6 +60,7 @@ function Contact() {
 
 </div>   
 </section>
+</Element>
   </>
 }
 

@@ -1,11 +1,13 @@
 import React from 'react'
 import { ProgressBar } from 'react-bootstrap'
+import {Element} from 'react-scroll'
 
 function Skills() {
   
    
 
     return <>
+    <Element id='skills'>
     <section className='aboutpage bg-dark'>
         <div className='container col-lg-6 col-12 pt-lg-0 pt-3 justify-content-center'>
             <br/>
@@ -30,6 +32,7 @@ function Skills() {
           
         </div>
         </section>    
+        </Element>
     </>
 }
 

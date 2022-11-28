@@ -1,11 +1,13 @@
 import React from 'react'
-
+import {Element} from 'react-scroll';
 
 function Education() {
 
    
   return <>
+  <Element id='education'>
   <section className='aboutpage bg-dark'>
+    <h1>EDUCATION</h1>
   <div className='container text-center text-light'>
   {/* <h2>EDUCATION</h2> */}
   <h4 >𝙐𝙉𝙄𝙑𝙀𝙍𝙎𝙄𝙏𝙔 </h4>
@@ -33,6 +35,7 @@ Madurai, Tamilnadu
 Madurai, Tamilnadu</p>
 </div>
 </section>
+</Element>
   </>
 }
 

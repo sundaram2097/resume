@@ -1,5 +1,6 @@
 import React from 'react'
 import Project from './Project'
+import {Element} from 'react-scroll';
 
 function js() {
     let data=[
@@ -23,6 +24,7 @@ function js() {
       
     ]
   return <>
+  <Element id='project'>
   <section className='aboutpage bg-dark'>  
    <div className="container">
     <br/>
@@ -38,7 +40,7 @@ function js() {
     
     </div>
     </section>
-
+    </Element>
   </>
 }
 
