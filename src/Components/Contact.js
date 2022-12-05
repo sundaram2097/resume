@@ -1,7 +1,7 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import FloatingLabel from 'react-bootstrap/FloatingLabel';
+// import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import {Element} from 'react-scroll';
 
 function Contact() {
@@ -15,36 +15,26 @@ function Contact() {
   
   <h2 className='text-muted mt-4'>𝙂𝙚𝙩 𝙞𝙣 𝙩𝙤𝙪𝙘𝙝 𝙬𝙞𝙩𝙝 𝙢𝙚 </h2>
   <div className='col'>
-<Form>
-      <Form.Group className="mb-4" controlId="formBasicEmail">
-        <Form.Label>Name</Form.Label>
-        
-        <Form.Control type="text" placeholder="Enter your name" />
-        <br/>
-        
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
-        {/* <Form.Label>Subject</Form.Label>
-        <Form.Control type="text" placeholder="Enter your subject" /> */}
-        <br/>
-        
-        {/* 
-        <Form.Control type="text" placeholder="Enter your message" /> */}
+  <Form className='pt-3' action="https://formsubmit.co/meenakshisundaram2097@gmail.com" method="POST">
+        <Form.Group className="mb-3" controlId="formBasicName">
+          <Form.Label>Full Name</Form.Label>
+          <Form.Control type="name" name='name' placeholder='Full Name' required />
+        </Form.Group>
+
+        <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control type="email" name='email' placeholder='Email' required />
+        </Form.Group>
+
         <Form.Label>Message</Form.Label>
-        <FloatingLabel controlId="floatingTextarea2" >
-              <Form.Control
-                as="textarea"
-                placeholder="Leave a message here"
-                style={{ height: '100px' }}
-              />
-            </FloatingLabel>
-        <br/>
-        <br/>
-        <Button  variant="secondary" type="submit">
-          Submit
-        </Button>
-      </Form.Group>
-</Form>
+        <textarea name='message' placeholder='Message' className="form-control" style={{ height: '100px' }} required/>
+        <div >
+          <button className='btn btn-primary mt-2 fs-6 ' type="submit">
+            <span className='mx-3 me-3'> Send</span>
+          </button>
+        </div>
+
+      </Form>
     </div>
 
 <div className='col text-light'>
